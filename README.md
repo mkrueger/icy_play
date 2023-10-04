@@ -4,6 +4,16 @@ It's just a command line tool should be easy to build on any platform. Just set 
 https://www.rust-lang.org/tools/install
 
 And type "cargo build --release" - in target/release is icy_play.
+
+That should work for all unix based OSes:
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+git clone https://github.com/mkrueger/icy_play.git
+cd icy_play
+cargo build --release
+sudo cp target/release/icy_play /usr/bin
+```
+
 # Usage
 ```
 Usage: icy_play [OPTIONS] <PATH> [COMMAND]
